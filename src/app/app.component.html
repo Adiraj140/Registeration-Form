@@ -1,0 +1,108 @@
+
+<div class="panel panel-default">
+  <div class="panel-body" style="font-size: 30px; font-weight:bolder; text-align: center; color: #C3E0E5;">
+    Register Below
+  </div>
+</div>
+<div class= "card font1"style="padding-left: 50px; padding-right: 50px;">
+ 
+  <form [formGroup]="userForm">
+    <div class="row">
+      <div class="col-6">
+        <div class="add">
+          <div class="form-row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <label style="padding-top: 20px; font-size: 20px; margin-left: 20px; font-weight: lighter;">Name</label>
+              </div>
+              <div class="col">
+                <input type="text" formControlName="name" class="form-control form-group-lg" placeholder="name">
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <label style="margin-top: 20px; padding-top: 5px; font-size: 20px; margin-left: 20px; font-weight: lighter;">Address</label>
+              </div>
+              <div class="col">
+                
+                <input type="text" formControlName="address" class="form-control" placeholder="address">
+                <!-- <select name="cars" id="cars" class="states">
+                  <option value="volvo">States</option>
+                  <option value="saab">Delhi ncr</option>
+                  <option value="mercedes">Uttar Pradesh</option>
+                  <option value="audi">Audi</option>
+                </select> -->
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <label style="padding-top: 20px; padding-top: 20px; font-size: 20px; margin-left: 20px; font-weight: lighter;">Contact</label>
+              </div>
+              <div class="col">
+                <input type="text" formControlName="contact" class="form-control" placeholder="contact">
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <label style="padding-top: 20px;padding-top: 20px; font-size: 20px; margin-left: 20px; font-weight: lighter;">Email</label>
+              </div>
+              <div class="col">
+                <input type="text" formControlName="email" class="form-control" placeholder="email">
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- Buttons -->
+      <div class="form-row mt-4" style="padding-left: 15px;">
+        <div class="col-md-6">
+          <button type="button" class="btn btn-primary" (click)="addItem()" style="background-color: #ffd1dc; font-weight: bold;" >Add</button>&nbsp;
+          <button type="button" class="btn btn-primary" (click)="reset()" style="font-weight: bold;">Reset</button>
+        </div>
+      </div>
+
+     
+      </div>
+         
+      
+      <div class="col-6">
+        <img src="myimage" alt="">
+      </div>
+    </div>
+   
+   
+
+
+<!-- Table -->
+
+<div class="col-6 mt-4 mb-4">
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>S.no</th>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Contact Number</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of listData;index as i">
+        <td><span>{{i + 1}}</span></td>
+        <td><span>{{item.name}}</span></td>
+        <td><span>{{item.address}}</span></td>
+        <td><span>{{item.contact}}</span></td>
+        <td><span>{{item.email}}</span></td>
+        <td> <button type="button" class="btn btn-primary" (click)="removeItem(i)">Remove</button></td>
+        <!-- <td> <button type="button" class="btn btn-primary" (click)="removeItem(i)">Edit</button></td> -->
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+

@@ -1,0 +1,72 @@
+h1{
+    color: darkcyan;
+    text-align: center;
+}
+ th{
+     padding: 20px;
+ }
+
+ td{
+     padding: 20px;
+ }
+
+ .btn{
+     padding-right: 40px;
+     padding-left: 40px;
+     padding-top: 20px;
+     padding-bottom: 20px;
+     margin: 40px;
+ background-color: #7776bc;
+ }
+
+ .add{
+     padding-left: 50px;
+     padding-right: 50px;
+ }
+
+ button {
+    background-color: rgb(193, 255, 236);
+   border: none;
+   color: rgb(0, 0, 0);
+   padding-left: 40px;
+   padding-right: 40px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   margin: 4px 20px;
+   cursor: pointer;
+   font-size: 15px;
+   border-radius: 30px;
+  }
+
+ 
+
+  .form-group{
+    margin-bottom: 0px;
+  }
+
+  .form-control{
+      width: 75%;
+      border-radius: 30px;
+      height: 60px;
+  }
+
+  .panel{
+      background-color: #274472;
+      }
+
+  .table>thead:first-child>tr:first-child>th {
+    border: 5px;
+    background-color: white;
+   
+}
+
+/* #cars{
+    border: none;
+    margin-top: 10px;
+}
+
+.states{
+    border-radius: 30px;
+    margin-left: 5px;
+} */
